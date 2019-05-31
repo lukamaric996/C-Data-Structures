@@ -110,8 +110,7 @@ Ako možemo izračunati vrijednosti funkcije f
  i vrijednosti derivacije funkcije f
  i ako znamo neki 𝑥𝑖 koji je blizu traženog korijena,
  možemo nelinearnu funkciju f u okolini točke
-(𝑥 , f(𝑥𝑖
-)) zamijeniti pravcem najsličnijim
+(𝑥 , f(𝑥𝑖)) zamijeniti pravcem najsličnijim
 toj funkciji – tangentom
 
 
