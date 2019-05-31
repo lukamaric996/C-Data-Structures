@@ -64,3 +64,63 @@ x = np.linspace(-1,1,1000)
 plt.plot(x,f(x),'r')
 plt.plot(x,df(x),'b')
 plt.show()
+
+
+#2D GRAFIKA
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x=[0,3,3,3,0,3,3,0]
+y=[0,0,2,2,2,2,4,4]
+
+x1=[4,6,6]
+x2=[2,4,0]
+
+x3=[0,3,3,0,0]
+x4=[0,0,4,4,0]
+
+x5=[4,6,6,4,4,6]
+x6=[0,0,2,2,4,4]
+
+fig=plt.figure()
+fig.suptitle("31.5.2019")
+
+graf=fig.add_subplot(121)
+line_up,=plt.plot(x,y,"r-",label="datum")
+line_up,=plt.plot(x1,x2,"r-")
+plt.legend(loc=1)
+graf.set_xlabel("datum")
+
+
+
+graf=fig.add_subplot(122)
+line_up,=plt.plot(x3,x4,"r", label="mjesec")
+line_down,=plt.plot(x5,x6,"r")
+plt.legend(loc=1)
+graf.set_xlabel("mjesec")
+
+
+
+
+
+'''
+NEWTON
+Ako možemo izračunati vrijednosti funkcije f
+ i vrijednosti derivacije funkcije f
+ i ako znamo neki 𝑥𝑖 koji je blizu traženog korijena,
+ možemo nelinearnu funkciju f u okolini točke
+(𝑥 , f(𝑥𝑖
+)) zamijeniti pravcem najsličnijim
+toj funkciji – tangentom
+
+
+SEKANTA
+
+
+Pretpostavimo da su nam poznate dvije točke 𝑥1 i 𝑥2 koje su blizu traženog
+korijena, tada možemo funkciju 𝑓 zamijeniti pravcem kroz točke (𝑥1, 𝑓(𝑥1)) i
+(𝑥2, 𝑓(𝑥2)) tj. sekantom. 
+
+
+'''
